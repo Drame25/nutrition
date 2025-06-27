@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Henda Drame</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .whatsapp-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .whatsapp-button a button {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .whatsapp-button a button:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contactez Henda Drame</h1>
+        <p>Mangeons mieux, vivons mieux 🌿</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Nos services</a></li>
+                <li><a href="recettes.html">Recettes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="text-align:center;">Formulaire de contact</h2>
+            <form action="mailto:bachirdrame408@gmail.com" method="post" enctype="text/plain">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="sujet">Sujet :</label>
+                <select id="sujet" name="sujet">
+                    <option value="consultation">Consultation</option>
+                    <option value="conseils">Conseils nutritionnels</option>
+                    <option value="commande">Commande d’un plan alimentaire</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Envoyer par email">
+            </form>
+        </section>
+
+        <div class="whatsapp-button">
+            <p>Ou contactez-nous sur WhatsApp :</p>
+            <a href="https://wa.me/221772569700?text=Bonjour%20Henda%2C%20j'aimerais%20avoir%20plus%20d'informations" target="_blank">
+                <button>💬 Écrire sur WhatsApp</button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align:center;">&copy; 2025 Henda Drame Nutrition - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
